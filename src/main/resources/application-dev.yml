@@ -1,0 +1,32 @@
+spring:
+  servlet:
+    multipart:
+      max-file-size: 200MB
+      max-request-size: 200MB
+logging:
+  level:
+    root: info
+
+qy:
+  access_key_id: xx
+  secret_access_key: xx
+  bucket-name: xx
+  zone: xx
+  protocol: https
+  host: qingstor.com
+
+minio:
+  access_key_id: xx
+  secret_access_key: xx
+  bucket-name: xx
+  protocol: http
+  host: 127.0.0.1
+  port: 9010
+  mask: 127.0.0.1
+
+upload:
+  put-max-size: 5 # 5Mb
+  part-max-size: 5 # 5Mb
+
+oss:
+  service: minio
